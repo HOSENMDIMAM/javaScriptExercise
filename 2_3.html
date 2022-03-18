@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>私のJavaScript</title>
+</head>
+
+<body>
+    <p>これはランダムリンク。</p>
+    <p id="demo"></p>
+    <script>
+        // 乱数の変数（0~1）
+        let r=Math.random();
+        // let l = "";
+        // TODO idが"demo"のタグを取得
+
+
+
+        // TODO 乱数変数　＞　0.5　の場合、demoタグ中に"https://www.google.com"のリンクを表示する
+        if ( r > 0.5){
+            document.write(document.getElementById("demo").innerHTML="<a href ='https://www.google.com'>Google</a>");
+            
+        }
+        // TODO 上記以外は、demoタグ中に"https://github.com"のリンクを表示する
+        else{
+            document.write(document.getElementById("demo").innerHTML= "<a href ='https://www.github.com'>GitHub</a>");
+        }
+       // document.write(document.getElementById("demo").innerHTML= li);
+
+
+    </script>
+
+</body>
+
+</html>

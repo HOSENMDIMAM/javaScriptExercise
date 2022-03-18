@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>私のJavaScript</title>
+</head>
+
+<body>
+
+    <p>ボタンを押すと、曜日を表示する</p>
+    <button onclick="myFunction()">クリック</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+            let x = "";
+            // 曜日（0~6）
+            let d = new Date().getDay();
+            // TODO switch文法で実装してください。
+            switch(d){
+                case 0:
+                    x = "日曜日";
+                    break;
+                case 1:
+                    x = "月曜日";
+                    break;
+                case 2:
+                    x = "火曜日";
+                    break;
+                case 3:
+                    x = "水曜日";
+                    break;
+                case 4:
+                    x = "木曜日";
+                    break;
+                case 5:
+                    x = "金曜日";
+                    break;
+                case 6:
+                    x = "土曜日";
+                    break;
+            }
+
+            document.getElementById("demo").innerHTML ="今日は"+ x;
+        }
+    </script>
+    <!-- loop -->
+
+
+    <!-- <script>
+    myFunction = function (){
+        let x = "";
+        let arr = ["日","月","火","水","木","金","土"];
+        let time = new Date().getDay();
+        for (let i = 0 ; i < arr.length; i++){
+            if (time === i){
+                x += arr[i];
+                break;
+            }
+        }
+        document.getElementById("demo").innerHTML = "今日は" + x　+"曜日";
+    }
+
+    </script> -->
+
+</body>
+
+</html>
